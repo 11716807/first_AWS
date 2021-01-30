@@ -3,5 +3,6 @@ const app = express();
 const router=require("./routes/route");
 
 app.use("/",router);
+const port= process.env.port || 3000;
 
-app.listen(3000,()=>{console.log("your server is running....")});
+app.listen(port ,()=>{console.log("your server is running....")});
